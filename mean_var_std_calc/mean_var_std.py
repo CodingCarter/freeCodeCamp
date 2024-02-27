@@ -23,13 +23,20 @@ def calculate(list):
             matrix.std(axis=1).tolist(),
             matrix.std(),
         ],
-        "max": [matrix.max(axis=0).tolist(), matrix.max(axis=1).tolist(), matrix.max()],
+        "max": [matrix.max(axis=0).tolist(),
+                matrix.max(axis=1).tolist(),
+                matrix.max()
+        ],
         "min": [
             matrix.min(axis=0).tolist(),
             matrix.min(axis=1).tolist(),
             matrix.min(),
         ],
-        "sum": [matrix.sum(axis=0).tolist(), matrix.sum(axis=1).tolist(), matrix.sum()],
+        "sum": [
+            matrix.sum(axis=0).tolist(),
+            matrix.sum(axis=1).tolist(),
+            matrix.sum()
+        ],
     }
 
     return calculations
